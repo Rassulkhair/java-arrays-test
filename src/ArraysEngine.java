@@ -39,6 +39,11 @@ public class ArraysEngine {
 
     // TODO: метод должен возвращать объект книги из массива по переданному название
     public Book findBookByTitle(Book[] books, String title) {
+        for (Book book : books) {
+            if (book != null && book.title.equalsIgnoreCase(title)) {
+                return book;
+            }
+        }
         return null;
     }
 
