@@ -6,9 +6,12 @@ public class Main {
 
         books[0] = book1;
         books[1] = book2;
-        ArraysEngines arrays = new ArraysEngines();
+        ArraysEngine arrays = new ArraysEngine();
         arrays.printAllBooks(books);
 
         System.out.println("Всего имеется " + arrays.getActualSize(books) + " книг");
+        System.out.println("Общее количество страниц: " + arrays.countTotalPages(books));
+
+
     }
 }

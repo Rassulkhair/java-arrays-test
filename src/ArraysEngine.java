@@ -1,4 +1,4 @@
-public class ArraysEngines {
+public class ArraysEngine {
 
 
     // TODO: метод должен вывести все книги массива, проигнорировать пустые места
@@ -27,7 +27,13 @@ public class ArraysEngines {
 
     // TODO: метод должен посчитать общее количество страниц всех книг массива
     public int countTotalPages(Book[] books) {
-        return 0;
+        int pagesCount = 0;
+        for (Book book : books) {
+            if (book != null) {
+                pagesCount += book.pages;
+            }
+        }
+        return pagesCount;
     }
 
 
