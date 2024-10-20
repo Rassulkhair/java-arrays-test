@@ -8,5 +8,7 @@ public class Main {
         books[1] = book2;
         ArraysEngines arrays = new ArraysEngines();
         arrays.printAllBooks(books);
+
+        System.out.println("Всего имеется " + arrays.getActualSize(books) + " книг");
     }
 }

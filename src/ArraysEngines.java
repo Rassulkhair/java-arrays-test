@@ -15,7 +15,13 @@ public class ArraysEngines {
 
     // TODO: метод должен посчитать фактическое кол-во книг, не учитывать null
     public int getActualSize(Book[] books) {
-        return 0;
+        int count = 0;
+        for (Book book : books) {
+            if (book != null) {
+                count++;
+            }
+        }
+        return count;
     }
 
 
