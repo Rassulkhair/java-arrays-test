@@ -35,6 +35,7 @@ public class ArraysTest {
 
     @Test
     public void testGetBookTitles() {
+
         System.out.print("Тест метода getBookTitles()   ");
         String[] expected = {
                 "1984", "Улисс", "Война и мир", "Гарри Поттер и философский камень", "Преступление и наказание", "Гордость и предубеждение"

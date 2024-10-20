@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Book[] books = new Book[3];
@@ -11,7 +13,6 @@ public class Main {
 
         System.out.println("Всего имеется " + arrays.getActualSize(books) + " книг");
         System.out.println("Общее количество страниц: " + arrays.countTotalPages(books));
-
 
     }
 }

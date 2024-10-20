@@ -50,12 +50,37 @@ public class ArraysEngine {
 
     // TODO: метод должен возвращать массив строк, которая состоит только из названия книг
     public String[] getBookTitles(Book[] books) {
-        return null;
+        int count = 0;
+        for (Book book : books) {
+            if (book != null) {
+                count++;
+            }
+        }
+
+        String[] titles = new String[count];
+        int index = 0;
+
+        for (Book book : books) {
+            if (book != null) {
+                titles[index++] = book.title;
+            }
+        }
+
+        return titles;
     }
 
 
     // TODO: метод должен находить книгу с самой наибольшей страницей
     public Book findLargestBook(Book[] books) {
-        return null;
+        Book largestBook = null;
+
+        for (Book book : books) {
+            if (book != null) {
+                if (largestBook == null || book.pages > largestBook.pages) {
+                    largestBook = book;
+                }
+            }
+        }
+        return largestBook;
     }
 }
